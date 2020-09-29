@@ -10,7 +10,6 @@ import '../App.css';
 
 const Pages=({user})=>{
     return(
-        <Router>
                 <Switch>
                     <Route exact path="/">
                         <Me user={user}/>
@@ -28,8 +27,7 @@ const Pages=({user})=>{
                         <Publications user={user}/>
                     </Route>
                 </Switch>
-        </Router>
-    )
-}
+    );
+};
 
 export default Pages;
